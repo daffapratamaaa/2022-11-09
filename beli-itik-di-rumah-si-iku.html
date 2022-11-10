@@ -14,6 +14,28 @@
 <meta name="keywords" content="Script HTML Beli Itik">
 <link rel="icon" type="image/x-icon" href="https://lh5.googleusercontent.com/p/AF1QipPLTXg_zAogQkFrp0hS1YOMbNle-C-aLYJTDgyZ=w720-h720-p-k-no">
 </head>
+<style type="text/css">
+@-webkit-keyframes roll {
+  from { -webkit-transform: rotate(0deg) }
+  to { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes roll {
+  from { -moz-transform: rotate(0deg) }
+  to { -moz-transform: rotate(360deg) }
+}
+@keyframes roll {
+  from { transform: rotate(0deg) }
+  to   { transform: rotate(360deg) }
+}
+body {
+  -moz-animation-name: roll;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-name: roll;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+}
+</style>
 <style>
 :root {
 --warna-bg: rgba(0, 0, 0, .5); 
